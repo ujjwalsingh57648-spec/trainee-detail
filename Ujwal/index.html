@@ -1,118 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Trainee Details</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Trainee Details - Ujwal</title>
+<link rel="stylesheet" href="test.css">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      margin: 0;
-      padding: 30px;
-      display: flex;
-      justify-content: center;
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
 
-    .card {
-      background: #ffffff;
-      width: 420px;
-      border-radius: 16px;
-      padding: 25px 30px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
+/* Card */
+.card {
+  background: #ffffff;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin: 40px auto;
+}
 
-    .title {
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: center;
+}
 
-    .profile {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 12px;
-    }
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
 
-    .profile img {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #f4a036;
-    }
+.profile img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f4a036;
+}
 
-    .label {
-      font-weight: 700;
-      margin-top: 12px;
-    }
+.label {
+  font-weight: 700;
+  margin-top: 12px;
+}
 
-    .value {
-      margin-top: 3px;
-      color: #333;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 14px 0;
-    }
-  </style>
+.value {
+  margin-top: 3px;
+  color: #333;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="card">
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container">
 
-    <div class="title">Trainee Details</div>
-
-    <div class="profile">
-      <img src="ujwal.jpeg" alt="Profile Photo">
+    <div class="logo-section">
+      <img src="msde.png">
+      <img src="skill-india.png">
+      <img src="dgt.png">
+      <img src="iti.png">
     </div>
 
-    <div class="label">Roll No</div>
-    <div class="value">00230810080951</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <div class="label">Name</div>
-    <div class="value">UJJWAL KUMAR SINGH</div>
+    <nav id="navMenu">
+      <a href="#">Grievance</a>
+      <a href="#">Download</a>
+      <a href="#">Verification</a>
+      <a href="#">Result</a>
+      <a href="#">Important Links</a>
+    </nav>
 
-    <div class="label">Father Name</div>
-    <div class="value">MANOJ KUMAR SINGH</div>
-
-    <div class="label">Trade Code</div>
-    <div class="value">453</div>
-
-    <div class="label">Trade Name</div>
-    <div class="value">Fitter (NSQF)</div>
-
-    <div class="label">Admission Year</div>
-    <div class="value">2023</div>
-
-    <div class="label">Date of Birth</div>
-    <div class="value">22-Jul-2003</div>
-
-    <div class="label">ITI Code</div>
-    <div class="value">PR10000615</div>
-
-    <div class="label">ITI Name</div>
-    <div class="value">Mahnar Private ITI-QCI</div>
-
-    <div class="label">Training Duration</div>
-    <div class="value">2023–2025</div>
-
-    <div class="label">Certified</div>
-    <div class="value">Yes</div>
-
-    <div class="label">Certificate Issue Date</div>
-    <div class="value">04-Sep-2025</div>
+    <div class="header-buttons">
+      <button class="examiner-btn">Register as an Examiner</button>
+      <button class="login-btn">Login</button>
+      <button class="help-btn">Help & Support</button>
+    </div>
 
   </div>
+</header>
+
+<!-- CARD -->
+<div class="card">
+
+  <div class="title">Trainee Details</div>
+
+  <div class="profile">
+    <!-- Use relative path instead of C:\ -->
+    <img src="ujwal.jpeg" alt="Profile Photo">
+  </div>
+
+  <div class="label">Roll No</div>
+  <div class="value">00230810080951</div>
+
+  <div class="label">Name</div>
+  <div class="value">UJWAL KUMAR SINGH</div>
+
+  <div class="label">Father Name</div>
+  <div class="value">MANOJ SINGH</div>
+
+  <div class="label">Trade Code</div>
+  <div class="value">453</div>
+
+  <div class="label">Trade Name</div>
+  <div class="value">Fitter (NSQF)</div>
+
+  <div class="label">Admission Year</div>
+  <div class="value">2023</div>
+
+  <div class="label">Date of Birth</div>
+  <div class="value">15-Jul-2002</div>
+
+  <div class="label">ITI Code</div>
+  <div class="value">PR10000615</div>
+
+  <div class="label">ITI Name</div>
+  <div class="value">Mahnar Private ITI-QCI</div>
+
+  <div class="label">Training Duration</div>
+  <div class="value">2023–2025</div>
+
+  <div class="label">Certified</div>
+  <div class="value">Yes</div>
+
+  <div class="label">Certificate Issue Date</div>
+  <div class="value">04-Sep-2025</div>
+
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
